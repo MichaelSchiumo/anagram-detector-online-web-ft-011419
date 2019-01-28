@@ -3,9 +3,10 @@ require 'pry'
 
 class Anagram 
   
-  attr_accessor :word
+  attr_accessor :name
   
   def initialize(word)
+<<<<<<< HEAD
     @word = word
   end  
   
@@ -18,7 +19,16 @@ class Anagram
     end  
   end    
 end    
+=======
+    @name = word
+  end 
 
+  def match(array)
+    array.select {|x| x.split("").sort == @name.split("").sort}
+  end   
+>>>>>>> c93cf642b46012cd02ff61bc5fdd24925c072e6a
+
+end 
 
 
 
